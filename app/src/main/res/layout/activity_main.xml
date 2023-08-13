@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20px"
+    android:background="#FFFFFF"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="40px"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:textSize="200px"
+        android:shadowColor="#315DA8"
+        android:shadowRadius="10"
+        android:shadowDy="10"
+        android:shadowDx="9"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:hint="Username"
+        android:layout_marginTop="200px"
+        android:inputType="text"
+        android:background="@drawable/form"
+        android:id="@+id/username"
+        android:padding="20px"
+        android:textColor="@color/black"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:hint="Password"
+        android:padding="20px"
+        android:inputType="textPassword"
+        android:background="@drawable/form"
+        android:layout_marginTop="100px"
+        android:id="@+id/password"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="200px"
+        android:id="@+id/login"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*All Rights Reserved*"
+        android:gravity="center"
+        android:layout_marginTop="120px"
+        />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

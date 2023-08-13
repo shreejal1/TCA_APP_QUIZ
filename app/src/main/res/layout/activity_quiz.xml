@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20px"
+    android:background="#FFFFFF"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded"
+                android:padding="20px"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name"
+                    android:text="Name: "
+                    android:textColor="@color/black"
+                    android:layout_marginTop="9px"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/faculty"
+                    android:text="Faculty: "
+                    android:textColor="@color/black"
+                    android:layout_marginTop="40px"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="20px"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="200px"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/quest"
+                    android:layout_marginTop="20px"
+                    android:text="Question"
+                    android:textSize="100px"
+                    android:textColor="@color/black"
+                    android:layout_margin="10px"
+                    />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ans a"
+        android:id="@+id/ansa"
+        android:layout_weight="1"
+        android:layout_marginRight="20px"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ans b"
+        android:layout_weight="1"
+        android:layout_marginLeft="20px"
+        android:id="@+id/ansb"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ans c"
+                        android:id="@+id/ansc"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20px"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ans d"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20px"
+                        android:id="@+id/ansd"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="submit"
+                    android:layout_marginTop="200px"
+                    android:id="@+id/submit"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_marginTop="300px"
+                android:background="@drawable/back"
+                android:id="@+id/back"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

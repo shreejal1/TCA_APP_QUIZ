@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20px"
+    android:background="#FFFFFF"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rounded"
+                android:padding="20px"
+
+                >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:text="Name: "
+                android:textColor="@color/black"
+                android:layout_marginTop="9px"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/faculty"
+                    android:text="Faculty: "
+                    android:textColor="@color/black"
+                    android:layout_marginTop="40px"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="20px"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_marginTop="20px"
+                android:textAllCaps="false"
+                android:layout_gravity="end"
+                android:id="@+id/logout"
+                android:background="@drawable/rounded"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:orientation="horizontal"
+                android:padding="20px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/decision"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:text="Mathematical Quiz App \n(Contains 10 questions \n each with 1 marks)"
+                />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continue"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="200px"
+                    android:id="@+id/mathcont"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:orientation="horizontal"
+                android:padding="20px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/decision"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Quiz App \n(Contains 10 questions \n each with 4 options and \n1 marks)"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continue"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="200px"
+                    android:id="@+id/quizcont"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
